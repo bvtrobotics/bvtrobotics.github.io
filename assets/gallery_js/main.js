@@ -20,6 +20,19 @@ $(function() {
 			xsmall:	'(max-width: 480px)'
 		});
 
+		// Menu.
+		$('#menu')
+		.append('<a href="#menu" class="close"></a>')
+		.appendTo($body)
+		.panel({
+			delay: 500,
+			hideOnClick: true,
+			hideOnSwipe: true,
+			resetScroll: true,
+			resetForms: true,
+			side: 'right'
+		});
+
 	// Disable animations/transitions until everything's loaded.
 		$body.addClass('is-loading');
 
